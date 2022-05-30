@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css" type="text/css">
+<script src="script.js"></script>
+<title>Kalkulator</title>
+    </head>
+    <body style="background-color: #ffffff">
+        <div class="text">KALKULATOR</div>
+        <div class="kalkulator">
+        <div class="display">
+        <p id="output">0</p></div>
+        <div class="first-row">
+            <button id="r1-1" onclick="wyczysc()" style="width: 138px;">
+                C
+           </button>
+           <button id="r1-3" onclick="procent()"> % </button>
+            <button id="r1-4" value="/" onclick="wartosc('/') ">/</button>
+        </div>
+        <div class="second-row">
+            <button id="r2-1" value="sin" onclick="sinus()">sin</button>
+            <button id="r2-2" value="cos" onclick="cosinus()" >cos</button>
+            <button id="r2-3" value="tg" onclick="tangens()" >tg</button>
+            <button id="r2-4" value="√" onclick="pierwiastek()">√</button>
+         </div>
+         <div class="third-row">
+            <button id="r3-1" value="7" onclick="wartosc('7') ">7</button>
+            <button id="r3-2" value="8" onclick="wartosc('8') ">8</button>
+            <button id="r3-3" value="9" onclick="wartosc('9') " >9</button>
+            <button id="r3-4" value="X" onclick="wartosc('*') ">X</button>
+         </div>
+         <div class="fourth-row">
+            <button id="r4-1" value="4" onclick="wartosc('4') ">4</button>
+            <button id="r4-2" value="5" onclick="wartosc('5') ">5</button>
+            <button id="r4-3" value="6" onclick="wartosc('6') " >6</button>
+            <button id="r4-4" value="-" onclick="wartosc('-') ">-</button>
+         </div>
+         <div class="fifth-row">
+            <button id="r5-1" value="1" onclick="wartosc('1') " >1</button>
+            <button id="r5-2" value="2" onclick="wartosc('2') " >2</button>
+            <button id="r5-3" value="3" onclick="wartosc('3') " >3</button>
+            <button id="r5-4" value="+" onclick="wartosc('+') ">+</button>
+         </div>
+         <div class="sixth-row">
+            <button id="r6-1" style="width: 138px;" value="0" onclick="wartosc('0') ">0</button>
+            <button id="r6-2" value="." onclick="wartosc('.') ">.</button>
+            <button id="r6-3" value="=" onclick="oblicz()" >=</button>
+         </div>
+        </div>
+    </body>
+</html>
